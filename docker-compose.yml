@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+# Backblaze Personal
+  backblaze-personal-wine:
+    image: tom300z/backblaze-personal-wine
+    container_name: backblaze-personal-wine
+    init: true
+    volumes:
+      - /opt/docker/backblaze-personal-wine:/wine/
+      - /mnt/shares:/data/Tower
+    ports:
+      - 25900:5900
