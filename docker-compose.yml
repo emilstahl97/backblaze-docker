@@ -7,6 +7,6 @@ services:
     init: true
     volumes:
       - /opt/docker/backblaze-personal-wine:/wine/
-      - /mnt/shares:/data/Tower
+      - /home/emilstahl/shares:/data/Tower
     ports:
       - 25900:5900
